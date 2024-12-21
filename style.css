@@ -1,0 +1,131 @@
+body{
+    background-color: white;
+}
+
+
+.navbar-toggler{
+    border:none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: white;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover , .nav-link:active{
+    color: #000;
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970 ;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+
+}
+
+.nav-link:hover:before, .nav-link:active:before{
+    width: 100%;
+    visibility: visible;
+}
+
+
+
+.navbar-brand{
+
+    font-weight: 500;
+    color: white;
+    font-size: 24px;
+    transition: 0.3 color;
+}
+
+.body-section{
+    background: url(bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.body-section::before{
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.about{
+    position: relative;
+    bottom: 350px;
+    color: white;
+    left: 2%;
+    
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about>h2{
+    margin-left: 180px;
+    font-family: sans-serif;
+}
+
+.contact{
+    background-color: rgb(82, 195, 221);
+    color: white;
+    width: 300px;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 50px;
+    margin-left: 100px;
+    cursor: pointer;
+    
+}
+.contact:hover{
+    background-color: blue;
+}
+.about-p2{
+    margin-left: 250px;
+}
+
+.about-p1{
+    margin-left: 50px;
+}
+
+.profile-image{
+    width: 360px;
+    position: relative;
+    left: 700px;
+    bottom: 595px;
+}
+
+.ife-remove{
+    width: 300px;
+}
+
+.card-con{
+    position: relative;
+    bottom: 680px;
+}
+
+.custom{
+    width: 100%;
+    
+    position: relative;
+    bottom: 593px;
+}
+
